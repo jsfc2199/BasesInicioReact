@@ -9,7 +9,10 @@ const objeto = {
 const getResult = () => {
   return 4 + 4;
 };
-export const FirstApp = () => {
+
+//podemos tener (props) o desestructuras las props (properties)
+//podemos enviar por defecto si no envían nada así title = 'Hola Soy Goku'
+export const FirstApp = ({title, subtitle}) => {
   //variables
   const nombre = "Juan";
 
@@ -17,6 +20,9 @@ export const FirstApp = () => {
     // si mandamos <> </> es un fragment
     //también se puede usar <Fragment></Fragment>
     <>
+    <h2>{title}</h2>
+    <h2>{subtitle}</h2>
+
       <div>FirstApp</div>
       <p>párrafo</p>
 

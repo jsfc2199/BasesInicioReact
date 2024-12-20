@@ -14,6 +14,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   //miramos que el index.html tiene un id root, allí se renderiza todo y renderizamos a App
   <React.StrictMode>
     <HelloWorldApp/>
-    <FirstApp/>
+
+    {/* enviamos props */}
+    <FirstApp title="Esto es una prop" subtitle="subtitle123"/>
   </React.StrictMode>
 );
