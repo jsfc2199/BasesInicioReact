@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 //si hay objetos que no se van a cambiar para nada ni hacen parte de hooks podemos sacarlo del functional component
@@ -34,8 +35,14 @@ export const FirstApp = ({title, subtitle}) => {
       <div>el resultado de getResult es: {getResult()}</div>
 
       {/* Booleanos no se imprimen */}
-      <div>el resultado de getResult es: {false}</div>
+      <div>el resultado de un booleano es: {false}</div>
 
     </>
   );
 };
+
+//Para tipar usamos los propTypes usando npm install prop-types
+FirstApp.propTypes = {
+    title: PropTypes.string,
+    subtitle: PropTypes.number.isRequired, //podemos hacer que sea requerido
+}
