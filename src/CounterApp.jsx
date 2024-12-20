@@ -13,6 +13,14 @@ export const CounterApp = ({ value }) => {
     // setCounter((c) => c+1) otra forma de hacerlo
   }
 
+  function restarUno() {
+    setCounter(counter - 1)
+  }
+
+  function reset() {
+    setCounter(value)
+  }
+
 //   lo mismo pero como arrow function
 //   const sumarUno = (event) => {
 //     console.log(event);
@@ -27,6 +35,8 @@ export const CounterApp = ({ value }) => {
 
       {/* evento onClick */}
       <button onClick={(event) => sumarUno(event)}>+1</button>
+      <button onClick={(event) => restarUno(event)}>-1</button>
+      <button onClick={reset}>reset</button>
     </>
   );
 };
