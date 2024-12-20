@@ -8,7 +8,7 @@ import { FirstApp } from './FirstApp';
 
 // import CounterApp from "./CounterApp";
 
-import './styles.css'
+import './styles.css' //se debe importar para tener estilos globales
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   //miramos que el index.html tiene un id root, allí se renderiza todo y renderizamos a App
