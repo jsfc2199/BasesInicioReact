@@ -40,4 +40,16 @@ describe("Pruebas en el counter app", () => {
     expect(screen.getByText(123)).toBeTruthy()
   })
 
+  //otra forma para seleccionar los elementos
+  test('Debe de resetear el contador', () => {
+    render(<CounterApp value={value}/>)   
+    fireEvent.click(screen.getByText('+1'))
+    fireEvent.click(screen.getByText('+1'))
+    fireEvent.click(screen.getByText('+1'))
+
+    fireEvent.click(screen.getByRole('button', {name: 'btn-reset'}))
+    expect(screen.getByText(value)).toBeTruthy()
+
+  })
+
 });

@@ -14,7 +14,9 @@ exports[`Pruebas en el counter app should match with snapshot 1`] = `
   <button>
     -1
   </button>
-  <button>
+  <button
+    aria-label="btn-reset"
+  >
     reset
   </button>
 </div>

@@ -36,7 +36,7 @@ export const CounterApp = ({ value }) => {
       {/* evento onClick */}
       <button onClick={(event) => sumarUno(event)}>+1</button>
       <button onClick={(event) => restarUno(event)}>-1</button>
-      <button onClick={reset}>reset</button>
+      <button aria-label='btn-reset' onClick={reset}>reset</button>
     </>
   );
 };
