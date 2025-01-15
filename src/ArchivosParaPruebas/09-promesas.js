@@ -1,23 +1,7 @@
-import { getHeroById } from "./bases/08-imp-exp";
 
-// const promesa = new Promise( (resolve, reject) => {
+import { getHeroById } from './08-imp-exp';
 
-//     setTimeout( () =>  {
-//         // Tarea
-//         // importen el
-//         const p1 = getHeroeById(2);
-//         resolve( p1 );
-//         // reject( 'No se pudo encontrar el héroe' );
-//     }, 2000 )
-
-// });
-
-// promesa.then( (heroe) => {
-//     console.log('heroe', heroe)
-// })
-// .catch( err => console.warn( err ) );
-
-const getHeroByIdAsync = (id) => {
+export const getHeroByIdAsync = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       // Tarea
@@ -27,12 +11,6 @@ const getHeroByIdAsync = (id) => {
       } else {
         reject("No se pudo encontrar el héroe");
       }
-    }, 2000);
+    }, 1000);
   });
 };
-
-getHeroByIdAsync(1)
-  .then((hero) => {
-    console.log(hero);
-  })
-  .catch(console.warn);
