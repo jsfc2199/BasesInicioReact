@@ -21,7 +21,8 @@ export const FirstApp = ({title, subtitle}) => {
     // si mandamos <> </> es un fragment
     //también se puede usar <Fragment></Fragment>
     <>
-    <h2>{title}</h2>
+    {/* add data attribute  */}
+    <h2 data-testid='test-title'>{title}</h2>
     <h2>{subtitle}</h2>
 
       <div>FirstApp</div>
