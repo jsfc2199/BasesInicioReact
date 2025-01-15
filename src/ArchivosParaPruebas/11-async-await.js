@@ -1,7 +1,7 @@
 // const getImagenPromesa = () => new Promise( resolve => resolve('https://ajskdhaskjdhajs.com') )
 // getImagenPromesa().then( console.log );
 
-const getImagen = async () => {
+export const getImagen = async () => {
   //ya no usamos los .then sino que siempre esperamos que algo se resuelva cuando usamos el await
   try {
     const apiKey = "C1khQe3Z7R1W2lfTO9myKeuShdqFYSGC";
@@ -14,12 +14,10 @@ const getImagen = async () => {
 
     const { url } = data.images.original;
 
-    const img = document.createElement("img");
-    img.src = url;
-    document.body.append(img);
+    return url
   } catch (error) {
     // manejo del error
-    console.error(error);
+    return 'image not found'
   }
 };
 
