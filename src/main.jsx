@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <HelloWorldApp/> */}
 
     {/* enviamos props */}
-    {/* <FirstApp title="Esto es una prop" subtitle={123}/> */}
-    <CounterApp value={123}/>
+    <FirstApp title="Esto es una prop" subtitle={123}/>
+    {/* <CounterApp value={123}/> */}
   </React.StrictMode>
 );
