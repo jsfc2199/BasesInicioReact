@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en first app Debe hacer match con el snapshot 1`] = `
+<div>
+  <h2>
+    Hola
+  </h2>
+  <h2>
+    123
+  </h2>
+  <div>
+    FirstApp
+  </div>
+  <p>
+    párrafo
+  </p>
+  <h3>
+    Tu nombre es: 
+    Juan
+  </h3>
+  <h3>
+    La suma de 1+1 es: 
+    2
+  </h3>
+  <div>
+    esto es un título
+  </div>
+  <div>
+    esto es un objeto
+  </div>
+  <div>
+    el resultado de getResult es: 
+    8
+  </div>
+  <div>
+    el resultado de un booleano es: 
+  </div>
+</div>
+`;
